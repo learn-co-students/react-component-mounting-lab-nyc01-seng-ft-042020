@@ -30,13 +30,14 @@ class Timer extends Component {
 
   //clock functions
   clockTick = () => {
+    console.log("found me!")
+
     this.setState(prevState => ({
       time: prevState.time + 1
     }));
   };
 
   stopClock = () => {
-    console.log("found me!")
     clearInterval(this.interval);
   };
 
